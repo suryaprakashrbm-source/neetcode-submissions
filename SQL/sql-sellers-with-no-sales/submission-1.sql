@@ -1,0 +1,2 @@
+-- Write your query below
+select s1.seller_name from seller s1 left join orders o1 on s1.seller_id=o1.seller_id and o1.sale_date between '2020-01-01' and '2020-12-31' where o1.order_id is null order by s1.seller_name
